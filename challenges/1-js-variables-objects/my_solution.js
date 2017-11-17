@@ -4,6 +4,11 @@
 
 // __________________________________________
 // Escribe tu codigo aca.
+var secretNumber = 7;
+var password  = "just open the door";
+var allowedIn = false;
+var name = [1,2,3];
+var members = ["Juan", "2", "4", "German"];
 
 
 // __________________________________________
