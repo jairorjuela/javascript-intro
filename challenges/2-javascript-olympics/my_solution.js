@@ -3,9 +3,28 @@
 // Integrantes parejas: nombre1, nombre2
 
 
-// 0. Objetos
+// 0. //objeto literal
+var james = {
+  name: "james"
+  sport: "Futbol"
+  height: 13
+}
 
+
+var Falcao = {
+  name: "Falcao"
+  sport: "Futbol"
+  height: 29
+}
 // 1. Añadir propiedades a objetos
+
+var addWinToAthelete = function(atletas){
+  atletas.forEach(function(atleta){
+    atleta.win = function(event){
+      console.log(`${this.name} won the ${event}`)
+    }
+  })
+}
 
 // 2. Voltea un String
 

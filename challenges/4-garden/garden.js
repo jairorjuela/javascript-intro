@@ -1,8 +1,46 @@
 // OOP En Javascript
 
+
 //------------------------------------------------------------------------------------------------------------------
 // TU CODIGO: Crea un Objeto literal "garden", y funcion constuctora y prototipos para Flower aca.
 //------------------------------------------------------------------------------------------------------------------
+var Flower = function(name, color)
+{
+  this.name = name
+  this.color = color
+
+}
+
+var garden =
+{
+  plant: function(flowers)
+  {
+    this.flowers = flowers
+  },
+  name: "Kula Botanical Garden",
+  location: "Makawao",
+  selectByColor: function(color)
+  {
+    return this.flowers.filter(function(flower)
+    {
+      return color === flower.color
+    })
+  },
+  selectByName: function(name)
+  {
+    return this.flowers.filter(function(flower)
+    {
+      return name === flower.name
+    })
+  },
+}
+
+Flower.prototype.identify = function(){
+  return `I am an ${this.name} and I am ${this.color}.`
+}
+
+
+
 
 
 //------------------------------------------------------------------------------------------------------------------
